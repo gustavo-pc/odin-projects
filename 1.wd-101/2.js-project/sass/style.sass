@@ -1,0 +1,48 @@
+$sketchpadSize: 600px
+
+*
+  margin: 0
+  padding: 0
+
+body
+  background: lightskyblue
+
+body, html
+  height: 100%
+
+button
+  margin: 15px auto
+  display: block
+  font-size: 2rem
+  padding: 0.5rem 1rem
+  text-transform: uppercase
+
+.sketchpad
+  height: $sketchpadSize
+  width: $sketchpadSize
+  overflow: hidden
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translateY(-50%) translateX(-50%)
+  box-shadow: 0 0 20px
+  border:
+    width: 50px
+    color: #B81900
+    style: solid
+    radius: 5px
+
+  .row
+    height:
+    background-color: rgb(230, 220, 220)
+    display: flex
+
+  .cell
+    background-color: transparentize(white, 0.5)
+    transition: background-color 150ms ease-in
+
+    &:hover
+      background-color: beige
+
+    &.used
+      background-color: transparentize(#5F5F5F, 0.1)

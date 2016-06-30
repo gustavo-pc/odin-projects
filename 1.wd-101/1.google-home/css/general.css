@@ -1,0 +1,18 @@
+* {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /*text-rendering: geometricPrecision;*/
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+.page-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}

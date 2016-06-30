@@ -1,0 +1,47 @@
+.center-content {
+  position: relative;
+  transform: translateY(-70%);
+}
+
+.center-content > * {
+  margin: auto;
+}
+
+.logo {
+  background-image: url('../img/logo.png');
+  background-size: 272px 92px;
+  height: 92px;
+  width: 272px;
+  margin: auto auto 30px auto;
+  position: relative;
+}
+
+.country-name {
+  color: #4285f4;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 15px;
+}
+
+form {
+  text-align: center;
+}
+
+input[type="text"] {
+  height: 38px;
+  width: 484px;
+  margin: auto;
+}
+
+input[type="submit"] {
+  font-weight: bold;
+  font-size: 13px;
+  background-color: #f8f8f8;
+  padding: 0 16px;
+  margin: 11px 4px;
+  color: #757575;
+  height: 36px;
+  border: 1px solid #f2f2f2;
+  border-radius: 2px;
+}

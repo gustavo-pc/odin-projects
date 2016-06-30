@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: lightskyblue;
+}
+
+body, html {
+  height: 100%;
+}
+
+button {
+  margin: 15px auto;
+  display: block;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+}
+
+.sketchpad {
+  height: 600px;
+  width: 600px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  box-shadow: 0 0 20px;
+  border-width: 50px;
+  border-color: #B81900;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.sketchpad .row {
+  background-color: #e6dcdc;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sketchpad .cell {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 150ms ease-in;
+}
+
+.sketchpad .cell:hover {
+  background-color: beige;
+}
+
+.sketchpad .cell.used {
+  background-color: rgba(95, 95, 95, 0.9);
+}
